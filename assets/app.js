@@ -3,10 +3,19 @@ import { render } from 'react-dom';
 
 const $ = jQuery;
 
+import ErrorBoundary from './components/ErrorBoundary';
+import Stupid from './components/Stupid';
+import Smart from './components/Smart';
+
 class App extends React.Component {
     render() {
         return (
-            <p>Hello World</p>
+            <div>
+                <Stupid />
+                <ErrorBoundary>
+                    <Smart />
+                </ErrorBoundary>
+            </div>
         );
     }
 }
