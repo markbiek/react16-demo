@@ -6,7 +6,7 @@ const $ = jQuery;
 class App extends React.Component {
     render() {
         return (
-            <p>Hello</p>
+            <p>Hello World</p>
         );
     }
 }
