@@ -1,0 +1,37 @@
+{
+    "name": "react16-demo",
+    "version": "1.0.0",
+    "scripts": {
+        "build": "webpack --mode production",
+        "watch": "webpack --progress --watch",
+        "clean": "rm -rf ./build/*",
+        "dev": "npm run start",
+        "start": "webpack-dev-server --hot --inline --progress --colors"
+    },
+    "dependencies": {
+        "axios": "^0.18.0",
+        "grunt": "~0.4.5",
+        "grunt-composer": "~0.4.4",
+        "grunt-shell": "~0.7.0",
+        "immutable": "^3.8.2",
+        "react": "^16.4.1",
+        "react-dom": "^16.4.1",
+        "webpack": "^4.15.1"
+    },
+    "devDependencies": {
+        "babel-core": "^6.26.3",
+        "babel-loader": "^7.1.5",
+        "babel-plugin-transform-async-to-generator": "^6.24.1",
+        "babel-plugin-transform-regenerator": "^6.26.0",
+        "babel-plugin-transform-runtime": "^6.23.0",
+        "babel-polyfill": "^6.26.0",
+        "babel-preset-env": "^1.7.0",
+        "babel-preset-react": "^6.24.1",
+        "babel-preset-stage-2": "^6.24.1",
+        "css-loader": "^0.28.11",
+        "mini-css-extract-plugin": "^0.4.1",
+        "node-sass": "^4.9.2",
+        "sass-loader": "^7.0.3",
+        "style-loader": "^0.21.0",
+    }
+}
