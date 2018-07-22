@@ -7,11 +7,14 @@ import Cookies from './Cookies';
 export default class Lists extends React.Component {
     render() {
         return (
-            <ul>
-                <Fruits />
-                <Veggies />
-                <Cookies />
-            </ul>
+            <div>
+                <h3>Fruits, Veggies, & Cookies</h3>
+                <ul>
+                    <Fruits />
+                    <Veggies />
+                    <Cookies />
+                </ul>
+            </div>
         );
     }
 }
