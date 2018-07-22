@@ -6,6 +6,7 @@ const $ = jQuery;
 import ErrorBoundary from './components/ErrorBoundary';
 import Stupid from './components/Stupid';
 import Smart from './components/Smart';
+import Lists from './components/Lists';
 
 class App extends React.Component {
     render() {
@@ -14,6 +15,7 @@ class App extends React.Component {
                 <Stupid />
                 <ErrorBoundary>
                     <Smart />
+                    <Lists />
                 </ErrorBoundary>
             </div>
         );
