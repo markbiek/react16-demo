@@ -4,7 +4,6 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const BUILD_DIR = path.resolve(__dirname, 'build/');
 const APP_DIR = path.resolve(__dirname, 'assets/');
-const devMode = process.env.NODE_ENV !== 'production';
 
 var config = {
     mode: 'development',
@@ -17,6 +16,9 @@ var config = {
         filename: 'bundle.js'
     },
     devtool: 'source-map',
+    devServer: {
+        contentBase: BUILD_DIR
+    },
     module: {
         rules: [
             {
