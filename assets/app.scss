@@ -30,6 +30,15 @@ nav {
             padding-right: 1em;
             font-weight: bold;
             border-right: 1px solid #000;
+
+            a {
+                text-decoration: none;
+            }
+
+            &.active {
+                color: purple;
+                text-decoration: underline;
+            }
         }
     }
 }
